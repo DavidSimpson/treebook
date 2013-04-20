@@ -12,10 +12,8 @@
           <%= link_to time_ago_in_words(status.created_at) + ' ago', status %>
           <span class="admin">
               | <%= link_to 'Edit', edit_status_path(status) %> |
-              <%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <%= link_to 'Delete', status, method: :delete, data: { confirm: 'Are you sure?' } %>
           </span>
       </div>
   </div>
 <% end %>
-
-<%= link_to 'New Status', new_status_path %>

@@ -38,14 +38,19 @@
 			  </div>
 			</div>
 
-			<p class="notice"><%= notice %></p>
-       		<p class="alert"><%= alert %></p>
-
   			<div class="row-fluid">
     			<div class="span2">
       				<!--Sidebar content-->
     			</div>
     			<div class="span10">
+    				
+    				<% flash.each do |type, message| %>
+    					<div class="alert <%= flash_class type %>">
+    						<button class="close" data-dismiss="alert">x</button>
+    					<%= message %>
+    					</div>
+    				<% end %>
+
       				<%= yield %>
     			</div>
 			</div>
