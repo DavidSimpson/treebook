@@ -3,3 +3,9 @@ david:
     last_name: 'Simpson'
     email: 'david@david-simpson.net'
     profile_name: 'smpsn'
+
+jim:
+    first_name: 'Jim'
+    last_name: 'Bob'
+    email: 'jim@david-simpson.net'
+    profile_name: 'jim'
